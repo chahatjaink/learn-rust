@@ -1,0 +1,49 @@
+# Target directory (build output)
+target/
+
+# Cargo lock file (except for libraries)
+**/Cargo.lock
+
+# Rust compilation artifacts
+debug/
+release/
+
+# Rust build artifacts
+*.rlib
+*.rmeta
+
+# Rust test binaries
+/tests/**/target/
+tests/**/debug/
+tests/**/release/
+
+# Dependencies
+/.cargo/
+cargo-home/
+
+# IDE and Editor files
+.idea/
+.vscode/
+*.iml
+
+# Backup and temporary files
+*.swp
+*.swo
+*.bak
+*.tmp
+
+# Logs
+*.log
+
+# Rust toolchain files
+rust-toolchain
+rust-toolchain.toml
+
+# Clippy and Rustfmt
+clippy.toml
+rustfmt.toml
+
+# Coverage and debugging
+*.profraw
+*.profdata
+coverage/
